@@ -1,7 +1,7 @@
 #CWD	=	$(shell pwd)
 
 server:
-	node api/index.js 
+	node api/web.js 
 
 #test: 
 #	mocha --reporter spec test/**/*.spec.js

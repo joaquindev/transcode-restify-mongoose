@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var restifyMongoose = require('../index.js');
 var models = require('./models');
 
+var theport = process.env.PORT || 5000;
 mongoose.connect('mongodb://localhost/restify-mongoose-examples');
 
 var server = restify.createServer({
@@ -29,6 +30,7 @@ server.del('/notes/:id', notes.remove());
 // Serve model Note as a REST API
 restifyMongoose(models.Note).serve('/api/notes', server);
 
-server.listen(3000, function () {
-    console.log('%s listening at %s. Point your browser to "%s/public/index.html" to see the angular UI in action!', server.name, server.url, server.url);
+server.listen(theport, function () {
+    //console.log('%s listening at %s. Point your browser to "%s/public/index.html" to see the angular UI in action!', server.name, server.url, server.url);
+    console.log('%s listening at %s.', server.name, server.url, server.url);
 });

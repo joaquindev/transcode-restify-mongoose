@@ -5,5 +5,4 @@ This repo stores the code while I transcode and therefore learn how the restify-
 
 The original source and idea of the code that this repo contains is: [saintedlama/restify-mongoose][url-source]
 
-
-[url-source]: https://github.com/joaquindev/transcode-restify-mongoose.git
+[url-source]: https://github.com/saintedlama/restify-mongoose?source=c

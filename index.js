@@ -1,5 +1,4 @@
 var util = require('util');
-
 var notFound = function (res, id) {
     res.send(404, { error: util.format('Could not find resource with id \'%s\'', id) });
 }
